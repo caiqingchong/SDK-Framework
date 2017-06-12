@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-   s.name        = "SDKFramework" 
+   s.name        = "trs_ta_sdk” 
   s.version      = "1.2.0"         
   s.license      = "MIT"           
   s.summary      = "A delightful collection of SDK"  
