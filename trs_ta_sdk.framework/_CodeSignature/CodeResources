@@ -4,37 +4,52 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/EventInfo.h</key>
+		<data>
+		k+14+Uf3bPuYjZoFFeMzwrMjuLI=
+		</data>
 		<key>Headers/TRSRequest.h</key>
 		<data>
-		SQoTkecwO42JK4nJnt1iF/0K8lA=
+		5oyibDr2vLFkhD/aoYoueibNKHg=
 		</data>
 		<key>trs_ta_sdk</key>
 		<data>
-		zPDyiBB9N8mf+pYyt+sVtAEziaE=
+		cT4X5+ZofCIJoVnsnTM7z+XX3YI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/EventInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k+14+Uf3bPuYjZoFFeMzwrMjuLI=
+			</data>
+			<key>hash2</key>
+			<data>
+			dlJs0lqfTmftZJIk4NsLV58LdTrUCJnGwZTbHHziTZY=
+			</data>
+		</dict>
 		<key>Headers/TRSRequest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SQoTkecwO42JK4nJnt1iF/0K8lA=
+			5oyibDr2vLFkhD/aoYoueibNKHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			SQwOf6wCf2YAoeJcM2it3aDrqgXVftvCjrR8SCi3iH0=
+			iEgoGS8RdSiwv+rtGLVveW7A1BgxvdwS7N+U443TT5Q=
 			</data>
 		</dict>
 		<key>trs_ta_sdk</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zPDyiBB9N8mf+pYyt+sVtAEziaE=
+			cT4X5+ZofCIJoVnsnTM7z+XX3YI=
 			</data>
 			<key>hash2</key>
 			<data>
-			UHfj9f8yLSnpJjUq97Mw2yyry+1HEVfjBqfDx6x0oWc=
+			BcTaPZxPWbOyVMYAvmXmALvBDzO1d81xsCqfV6eTdro=
 			</data>
 		</dict>
 	</dict>
@@ -55,6 +70,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -100,6 +120,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
