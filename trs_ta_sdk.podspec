@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary      = "A delightful collection of SDK 1.4.0 "  
 
   s.homepage     = "https://github.com/caiqingchong/SDK-Framework"  
-  s.source       = { :git => "https://github.com/caiqingchong/SDK-Framework.git”, :tag => s.version } 
+  s.source       = { :git => "https://github.com/caiqingchong/SDK-Framework.git", :tag => s.version } 
   
   s.requires_arc = true  
   s.platform     = :ios,'7.0'
