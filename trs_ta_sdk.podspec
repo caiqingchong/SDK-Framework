@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/caiqingchong/SDK-Framework"  
   s.source       = { :git => "https://github.com/caiqingchong/SDK-Framework.git”, :tag => s.version } 
-  s.source_files = "trs_ta_sdk/*.{h,m}"  
+  
   s.requires_arc = true  
   s.platform     = :ios, "7.0"  
   s.frameworks   = "UIKit", "Foundation","CoreTelephony"
