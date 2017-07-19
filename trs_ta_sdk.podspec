@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"  
   s.frameworks   = "UIKit", "Foundation","CoreTelephony" 
   s.vendored_frameworks = 'trs_ta_sdk.framework' 
-  s.author             = { "张凯" => "2273034940@qq.com"}  
+  s.author             = { '张凯' => '2273034940@qq.com'}  
   s.social_media_url   = "https://github.com/caiqingchong" 
 end
