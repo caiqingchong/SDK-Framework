@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "EventInfo.h"
+#import "TRSOperationInfo.h"
 
 @interface TRSRequest : NSObject
 
@@ -20,25 +20,32 @@
  */
 + (void)setAppKey:(NSString *)appKey setAppID:(NSString *)appID andChannel:(NSString *)channel;
 
+
 /**
- *
- *
  *  @param statisticsURL 统计路径
  *  @param loginUser     用户登录名
  *  @param deviceID      对方传的唯一标识
  */
-+ (void)statisticsURL:(NSString *)statisticsURL loginUser:(NSString *)loginUser andDeveceID:(NSString *)deviceID;
++ (void)statisticsURL:(NSString *)statisticsURL loginUser:(NSString *)loginUser andDeviceID:(NSString *)deviceID;
 
-
-//获取用户经纬度  
+/**
+ *  获取用户经纬度
+*/
 + (void)getLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
 
+/**
+ * 在页面打开的时候调用，获取页面访问时间
+ */
++ (void)beginLogPageView;
 
-//数据统计，未统计事件时长
-+ (void)recordGeneral:(EventInfo *)messsageInfo;
+/**
+ * 数据统计，未统计事件时长
+*/
++ (void)recordGeneral:(TRSOperationInfo *)messsageInfo;
 
 //数据统计，统计事件时长
-+ (void)recordGeneralWithDuration:(EventInfo *)messsageInfo;
++ (void)recordGeneralWithDuration:(TRSOperationInfo *)messsageInfo;
+
 
 
 
