@@ -34,6 +34,11 @@
 + (void)getLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
 
 /**
+ *  APP在debug调试时调用isDebug，SDK发送机制变逐页发送并打印采集数据。
+*/
++ (void)debugSet;
+
+/**
  * 在页面打开的时候调用，获取页面访问时间
  */
 + (void)beginLogPageView;
