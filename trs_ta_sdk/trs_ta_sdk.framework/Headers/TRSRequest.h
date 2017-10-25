@@ -8,10 +8,10 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "TRSOperationInfo.h"
-
+#import "EventInfo.h"
 @interface TRSRequest : NSObject
 
-
+#pragma mark 通用方法
 /**
  *  获取用APP的信息
  *  @param appKey    收到的分发的APPKey
@@ -20,8 +20,37 @@
  */
 + (void)setAppKey:(NSString *)appKey setAppID:(NSString *)appID andChannel:(NSString *)channel;
 
+/**
+ *  获取用户经纬度
+ */
++ (void)getLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
+
+
+#pragma mark 1.4.0方法
+
+/** 统计用户登录及唯一标识信息
+ *  @param statisticsURL 统计路径
+ *  @param loginUser     用户登录名
+ *  @param deviceID      对方传的唯一标识
+ */
++ (void)statisticsURL:(NSString *)statisticsURL loginUser:(NSString *)loginUser andDeveceID:(NSString *)deviceID __attribute__((deprecated("方法已过期")));
 
 /**
+ * 数据统计，未统计事件时长
+ */
++ (void)recordGeneral:(EventInfo *)messsageInfo __attribute__((deprecated("方法已过期")));
+
+/**
+ * 数据统计，统计事件时长
+ */
++ (void)recordGeneralWithDuration:(EventInfo *)messsageInfo __attribute__((deprecated("方法已过期")));
+
+
+
+
+#pragma mark 1.5.0方法
+
+/** 统计用户登录及唯一标识信息 
  *  @param statisticsURL 统计路径
  *  @param loginUser     用户登录名
  *  @param deviceID      对方传的唯一标识
@@ -29,14 +58,9 @@
 + (void)statisticsURL:(NSString *)statisticsURL loginUser:(NSString *)loginUser andDeviceID:(NSString *)deviceID;
 
 /**
- *  获取用户经纬度
+ *  APP在debug调试时调用isDebug为YES，SDK发送机制变逐页发送并打印采集数据。
 */
-+ (void)getLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
-
-/**
- *  APP在debug调试时调用isDebug，SDK发送机制变逐页发送并打印采集数据。
-*/
-+ (void)debugSet;
++ (void)debugEnable:(BOOL)isDebug;
 
 /**
  * 在页面打开的时候调用，获取页面访问时间
@@ -46,10 +70,12 @@
 /**
  * 数据统计，未统计事件时长
 */
-+ (void)recordGeneral:(TRSOperationInfo *)messsageInfo;
++ (void)TRSRecordGeneral:(TRSOperationInfo *)messsageInfo;
 
-//数据统计，统计事件时长
-+ (void)recordGeneralWithDuration:(TRSOperationInfo *)messsageInfo;
+/**
+ * 数据统计，统计事件时长
+ */
++ (void)TRSRecordGeneralWithDuration:(TRSOperationInfo *)messsageInfo;
 
 
 
