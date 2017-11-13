@@ -33,7 +33,9 @@ typedef enum : NSUInteger {
 @property (nonatomic,copy) NSString *classifyName;//分类短名称    该操作行为发生在哪个栏目下，该栏目（频道的短名称） 如：推荐、头条、杭州
 @property (nonatomic,copy) NSString *eventName;   //事件名称  如：点赞
 @property (nonatomic,copy) NSString *eventDetail; //动作细化  是对eventCode的细化，如分享的细化是分享到“微信、朋友圈”
-@property (nonatomic,copy) NSString *search;      //搜索词  搜索的词
+
+@property (nonatomic,copy) NSString *search;      //搜索词  搜索的词   相关词
+
 @property (nonatomic,copy) NSString *number;      //数量，被操作对象的某个序号指标，如：文章字数
 @property (nonatomic,copy) NSString *objectName;  //对象短名称，如：文章标题
 @property (nonatomic,copy) NSString *objectIDs;   //对象IDs  统计列表中多个文章的ID时传值
