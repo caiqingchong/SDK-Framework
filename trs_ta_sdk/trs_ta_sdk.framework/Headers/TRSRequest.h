@@ -26,29 +26,7 @@
 + (void)getLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
 
 
-#pragma mark 1.4.0方法
-
-/** 统计用户登录及唯一标识信息
- *  @param statisticsURL 统计路径
- *  @param loginUser     用户登录名
- *  @param deviceID      对方传的唯一标识
- */
-+ (void)statisticsURL:(NSString *)statisticsURL loginUser:(NSString *)loginUser andDeveceID:(NSString *)deviceID __attribute__((deprecated("方法已过期")));
-
-/**
- * 数据统计，未统计事件时长
- */
-+ (void)recordGeneral:(EventInfo *)messsageInfo __attribute__((deprecated("方法已过期")));
-
-/**
- * 数据统计，统计事件时长
- */
-+ (void)recordGeneralWithDuration:(EventInfo *)messsageInfo __attribute__((deprecated("方法已过期")));
-
-
-
-
-#pragma mark 1.5.0方法
+#pragma mark 1.5.+方法
 
 /** 统计用户登录及唯一标识信息 
  *  @param statisticsURL 统计路径
@@ -77,6 +55,33 @@
  */
 + (void)TRSRecordGeneralWithDuration:(TRSOperationInfo *)messsageInfo;
 
+/**
+ *  @param deviceID   新设备码
+ *  @param oldDeviceID   老设备码
+ */
++ (void)sendAppSelfDeviceID:(NSString *)deviceID oldDeviceID:(NSString *)oldDeviceID;
+
+
+
+
+#pragma mark 1.4.0方法
+
+/** 统计用户登录及唯一标识信息
+ *  @param statisticsURL 统计路径
+ *  @param loginUser     用户登录名
+ *  @param deviceID      对方传的唯一标识
+ */
++ (void)statisticsURL:(NSString *)statisticsURL loginUser:(NSString *)loginUser andDeveceID:(NSString *)deviceID __attribute__((deprecated("方法已过期")));
+
+/**
+ * 数据统计，未统计事件时长
+ */
++ (void)recordGeneral:(EventInfo *)messsageInfo __attribute__((deprecated("方法已过期")));
+
+/**
+ * 数据统计，统计事件时长
+ */
++ (void)recordGeneralWithDuration:(EventInfo *)messsageInfo __attribute__((deprecated("方法已过期")));
 
 
 
