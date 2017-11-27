@@ -39,7 +39,7 @@ typedef enum : NSUInteger {
 @property (nonatomic,copy) NSString *number;      //数量，被操作对象的某个序号指标，如：文章字数
 @property (nonatomic,copy) NSString *objectName;  //对象短名称，如：文章标题
 @property (nonatomic,copy) NSString *objectIDs;   //对象IDs  统计列表中多个文章的ID时传值
-@property (nonatomic,copy) NSString *sequence;    //序数，被操作对象的某个序号指标，如：打开文章阅读页时，所选文章是列表上的第几篇。
+@property (nonatomic,copy) NSString *sequence;   //序数，被操作对象的某个序号指标，如：打开文章阅读页时，所选文章是列表上的第几篇。
 @property (nonatomic,copy) NSString *percentage;  //本次操作行为百分比，如：阅读百分比
 @property (nonatomic,assign) BOOL isSuccess;   //是否成功，默认成功 如：登录成功
 @property (nonatomic,copy) NSDictionary *otherInfo;   //其他信息：（小冰信息）
