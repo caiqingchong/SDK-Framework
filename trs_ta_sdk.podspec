@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 
  s.name        = 'trs_ta_sdk' 
-  s.version      = '1.5.3'     
+  s.version      = '1.5.4'     
   s.license      = 'MIT'           
-  s.summary      = 'A delightful collection of SDK 1.5.3'  
+  s.summary      = 'A delightful collection of SDK 1.5.4'  
 
   s.homepage     = 'https://github.com/caiqingchong/SDK-Framework' 
   s.source       = { :git => 'https://github.com/caiqingchong/SDK-Framework.git', :tag => s.version } 
