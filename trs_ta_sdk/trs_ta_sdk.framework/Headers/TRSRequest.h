@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TRSOperationInfo.h"
 #import "EventInfo.h"
+
 @interface TRSRequest : NSObject
 
 #pragma mark 通用方法
@@ -25,6 +26,12 @@
  */
 + (void)getLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
 
+/**
+ *  attributes 传参"个像"的ID等信息@{@"gxDeviceId":@"123456"};"个像"的ID的key固定为“gxDeviceId”
+ *  idfa       开发者传的手机广告标识符
+ *  deviceID   开发者传的最新的设备标识码
+ */
++ (void)setCorrelationWithOthers:(NSDictionary *)attributes idfaInfo:(NSString *)idfa andDeviceID:(NSString *)deviceID;
 
 #pragma mark 1.5.+方法
 
