@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 
  s.name        = 'trs_ta_sdk' 
-  s.version      = '1.5.7'     
+  s.version      = '2.0.0'     
   s.license      = 'MIT'           
-  s.summary      = 'A delightful collection of SDK 1.5.7'  
+  s.summary      = 'A delightful collection of SDK 2.0.0'  
 
   s.homepage     = 'https://github.com/caiqingchong/SDK-Framework' 
   s.source       = { :git => 'https://github.com/caiqingchong/SDK-Framework.git', :tag => s.version } 
@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
 
 s.source_files = 'trs_ta_sdk/trs_ta_sdk.framework/Headers/*.{h}'
 s.vendored_frameworks = 'trs_ta_sdk/trs_ta_sdk.framework'
-s.public_header_files = 'trs_ta_sdk/trs_ta_sdk.framework/Headers/TRSRequest.h','trs_ta_sdk/trs_ta_sdk.framework/Headers/EventInfo.h','trs_ta_sdk/trs_ta_sdk.framework/Headers/TRSOperationInfo.h'
+s.public_header_files = 'trs_ta_sdk/trs_ta_sdk.framework/Headers/TRSAnalytics.h'
 
 end
